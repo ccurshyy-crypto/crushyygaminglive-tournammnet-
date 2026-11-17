@@ -1,0 +1,457 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CrushyyGamingLive | BGMI Tournament</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #080808;
+  color: white;
+}
+
+header {
+  background: #111;
+  border-bottom: 2px solid #ffcc00;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 900;
+  color: #ffcc00;
+  letter-spacing: 2px;
+}
+
+header p {
+  color: #aaa;
+  margin-top: 6px;
+}
+
+.hero {
+  text-align: center;
+  padding: 55px 15px;
+  background:
+    radial-gradient(circle at top, #493600, #111 65%);
+}
+
+.hero h1 {
+  font-size: clamp(35px, 7vw, 65px);
+  color: #ffcc00;
+  font-weight: 900;
+  text-shadow: 2px 3px black;
+}
+
+.hero h2 {
+  font-size: 27px;
+  margin: 10px;
+}
+
+.hero p {
+  color: #ddd;
+  line-height: 1.7;
+}
+
+.season {
+  display: inline-block;
+  background: #ffcc00;
+  color: black;
+  font-weight: bold;
+  padding: 9px 25px;
+  margin: 15px;
+  transform: skew(-8deg);
+}
+
+.container {
+  width: 92%;
+  max-width: 1050px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  color: #ffcc00;
+  font-size: 28px;
+  margin: 35px 0 20px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.info {
+  background: #171717;
+  border: 1px solid #555;
+  border-radius: 12px;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.info h3 {
+  color: #ffcc00;
+  margin-bottom: 8px;
+}
+
+.prizes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.prize {
+  background: linear-gradient(145deg, #292000, #111);
+  border: 1px solid #ffcc00;
+  border-radius: 12px;
+  text-align: center;
+  padding: 20px 5px;
+}
+
+.prize h3 {
+  font-size: 16px;
+}
+
+.prize strong {
+  display: block;
+  font-size: 28px;
+  color: #ffcc00;
+  margin-top: 10px;
+}
+
+.registration {
+  background: #151515;
+  border: 1px solid #ffcc00;
+  border-radius: 15px;
+  padding: 25px;
+  max-width: 650px;
+  margin: 30px auto;
+}
+
+.registration h2 {
+  text-align: center;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.registration p {
+  text-align: center;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 14px 0 7px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background: #080808;
+  color: white;
+  outline: none;
+  font-size: 15px;
+}
+
+input:focus, select:focus {
+  border-color: #ffcc00;
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  color: #ccc;
+  margin: 18px 0;
+}
+
+.checkbox input {
+  width: auto;
+  margin-top: 3px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #ffcc00;
+  color: black;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #fff;
+}
+
+.note {
+  color: #aaa;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+.live {
+  text-align: center;
+  padding: 30px 10px;
+  background: #171717;
+  margin-top: 30px;
+}
+
+.live h2 {
+  color: red;
+  margin-bottom: 12px;
+}
+
+.live strong {
+  color: #ffcc00;
+  font-size: 22px;
+}
+
+footer {
+  text-align: center;
+  background: #050505;
+  padding: 25px 10px;
+  border-top: 1px solid #444;
+  color: #aaa;
+  line-height: 2;
+}
+
+footer strong {
+  color: #ffcc00;
+}
+
+@media(max-width:650px) {
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .prizes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
+    padding: 40px 10px;
+  }
+
+  .registration {
+    padding: 18px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">CRUSHYY GAMING LIVE</div>
+  <p>Official BGMI Tournament Registration</p>
+</header>
+
+<section class="hero">
+  <h1>CRUSHYY</h1>
+  <h2>CHAMPIONSHIP</h2>
+  <div class="season">SEASON 1</div>
+  <p>
+    Welcome to Crushyy Championship!<br>
+    16 Players will compete in<br>
+    <strong>BGMI Solo Classic Erangel</strong>
+  </p>
+</section>
+
+<div class="container">
+
+  <h2 class="section-title">TOURNAMENT DETAILS</h2>
+
+  <div class="info-grid">
+    <div class="info">
+      <h3>🎮 MODE</h3>
+      Solo TPP
+    </div>
+
+    <div class="info">
+      <h3>📍 MAP</h3>
+      Erangel
+    </div>
+
+    <div class="info">
+      <h3>👥 PLAYERS</h3>
+      16
+    </div>
+
+    <div class="info">
+      <h3>💰 ENTRY</h3>
+      ₹30
+    </div>
+  </div>
+
+  <h2 class="section-title">🏆 PRIZE DISTRIBUTION</h2>
+
+  <div class="prizes">
+    <div class="prize">
+      <h3>🥇 1st Place</h3>
+      <strong>₹250</strong>
+    </div>
+
+    <div class="prize">
+      <h3>🥈 2nd Place</h3>
+      <strong>₹120</strong>
+    </div>
+
+    <div class="prize">
+      <h3>🥉 3rd Place</h3>
+      <strong>₹60</strong>
+    </div>
+
+    <div class="prize">
+      <h3>⭐ Most Kills</h3>
+      <strong>₹50</strong>
+    </div>
+  </div>
+
+  <h2 class="section-title">📝 PLAYER REGISTRATION</h2>
+
+  <div class="registration">
+
+    <h2>JOIN CRUSHYY CHAMPIONSHIP</h2>
+    <p>Fill your details to register for the tournament.</p>
+
+    <form id="registerForm">
+
+      <label>Player Name</label>
+      <input type="text" id="playerName"
+        placeholder="Enter your name" required>
+
+      <label>BGMI In-Game Name</label>
+      <input type="text" id="gameName"
+        placeholder="Enter your BGMI name" required>
+
+      <label>BGMI Character ID</label>
+      <input type="text" id="bgmiId"
+        placeholder="Enter your BGMI ID"
+        inputmode="numeric" required>
+
+      <label>WhatsApp Number</label>
+      <input type="tel" id="phone"
+        placeholder="Enter WhatsApp number"
+        pattern="[0-9]{10}" maxlength="10" required>
+
+      <label>Email (Optional)</label>
+      <input type="email" id="email"
+        placeholder="Enter your email">
+
+      <label>Game Mode</label>
+      <select id="mode">
+        <option value="Solo TPP">Solo TPP</option>
+      </select>
+
+      <label>Map</label>
+      <select id="map">
+        <option value="Erangel">Erangel</option>
+      </select>
+
+      <div class="checkbox">
+        <input type="checkbox" id="agree" required>
+        <span>
+          I confirm that my registration details are correct
+          and I agree to follow tournament rules.
+        </span>
+      </div>
+
+      <button type="submit" class="btn">
+        REGISTER NOW →
+      </button>
+
+      <div class="note">
+        Entry Fee: ₹30<br>
+        Registration will be subject to organizer confirmation.
+      </div>
+
+    </form>
+  </div>
+
+</div>
+
+<section class="live">
+  <h2>🔴 LIVE STREAMING</h2>
+  <strong>CrushyyGamingLive</strong>
+  <p style="margin-top:10px;color:#bbb">
+    Watch the tournament live and support your favourite players!
+  </p>
+</section>
+
+<footer>
+  <p>Sponsored By: <strong>STAREVENTLIVE</strong></p>
+  <p>Contact: <strong>9890175727</strong></p>
+  <p>© 2026 CrushyyGamingLive</p>
+  <p>PLAY • COMPETE • WIN</p>
+</footer>
+
+<script>
+document.getElementById("registerForm")
+.addEventListener("submit", function(e) {
+
+  e.preventDefault();
+
+  const name = document.getElementById("playerName").value.trim();
+  const game = document.getElementById("gameName").value.trim();
+  const id = document.getElementById("bgmiId").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const mode = document.getElementById("mode").value;
+  const map = document.getElementById("map").value;
+
+  if (!/^[0-9]{10}$/.test(phone)) {
+    alert("Please enter a valid 10-digit WhatsApp number.");
+    return;
+  }
+
+  const message =
+`🔥 CRUSHYY CHAMPIONSHIP SEASON 1 REGISTRATION
+
+👤 Player Name: ${name}
+🎮 BGMI Name: ${game}
+🆔 BGMI ID: ${id}
+📱 WhatsApp: ${phone}
+📧 Email: ${email || "Not provided"}
+
+🎯 Mode: ${mode}
+📍 Map: ${map}
+💰 Entry Fee: ₹30
+
+Please confirm my tournament registration.
+
+- CrushyyGamingLive`;
+
+  const whatsappNumber = "919890175727";
+
+  const url = "https://wa.me/" + whatsappNumber +
+    "?text=" + encodeURIComponent(message);
+
+  window.open(url, "_blank");
+
+});
+
+</script>
+
+</body>
+</html>
